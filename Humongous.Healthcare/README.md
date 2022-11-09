@@ -5,6 +5,7 @@ This codebase is a representative example of a Health Check tracking API service
 # Running the API Service
 
 To run the API service locally, it is necessary to define the `CosmosDb::Account` and `CosmosDb::Key` settings in the `appsettings.json` file to point to a valid CosmosDb account.
+gghdfh
 
 ```json
 {
