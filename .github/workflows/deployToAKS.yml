@@ -20,9 +20,9 @@ build-and-deploy:
 
     - uses: azure/docker-login@v1
         with:
-        login-server: ${{ env.ACR_LOGIN_SERVER }}
-        username: ${{ secrets.acr_username }}
-        password: ${{ secrets.acr_password }}
+          login-server: ${{ env.ACR_LOGIN_SERVER }}
+          username: ${{ secrets.acr_username }}
+          password: ${{ secrets.acr_password }}
 
     - name: Build and push image to ACR
         id: build-image
