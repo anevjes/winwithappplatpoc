@@ -1,12 +1,12 @@
 name: WEBAPI - AKS - Build and deploy
 
 on:
-push:
-  branches:
-  - main
-  paths:
-  - Humongous.Healthcare/**
-  - manifests/**
+  push:
+    branches:
+    - main
+    paths:
+    - Humongous.Healthcare/**
+    - manifests/**
 
 jobs:
   build-and-deploy:
