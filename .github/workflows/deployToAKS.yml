@@ -1,7 +1,7 @@
 name: API - AKS - Build and deploy
 
-on:
-push:
+on: 
+ push:
     branches:
     - main
     paths:
@@ -9,12 +9,12 @@ push:
     - manifests/**
 
 jobs:
-build-and-deploy:
+  build-and-deploy:
     runs-on: ubuntu-latest
     env:
-    ACR_LOGIN_SERVER: <replace with your ACR name>.azurecr.io
-    AKS_NAMESPACE: health-check
-    CONTAINER_IMAGE: <replace with your ACR name>.azurecr.io/humongous-healthcare-api:${{ github.sha }}
+      ACR_LOGIN_SERVER: <replace with your ACR name>.azurecr.io
+      AKS_NAMESPACE: health-check
+      CONTAINER_IMAGE: <replace with your ACR name>.azurecr.io/humongous-healthcare-api:${{ github.sha }}
     steps:
     - uses: actions/checkout@master
 
