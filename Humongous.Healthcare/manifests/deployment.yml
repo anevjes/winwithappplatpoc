@@ -6,7 +6,7 @@ spec:
   replicas: 3
   selector:
     matchLabels:
-    app: "humongous-healthcare-api"
+      app: "humongous-healthcare-api"
   template:
     metadata:
       labels:
